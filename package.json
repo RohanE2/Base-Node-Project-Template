@@ -1,0 +1,17 @@
+{
+  "name": "node_js_template",
+  "version": "1.0.0",
+  "description": "A basic starter boiler plate project for the node",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js"
+  },
+  "author": "Rohan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "http-status-codes": "^2.3.0",
+    "winston": "^3.17.0"
+  }
+}
