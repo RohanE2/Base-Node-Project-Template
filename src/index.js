@@ -1,8 +1,10 @@
-const express = require('express');
-
-const { ServerConfig, Logger } = require('./config');
-const apiRoutes = require('./routes');
+import express from 'express';
+import { ServerConfig, Logger } from './config/index.js';
+import apiRoutes from './routes/index.js';
 const app = express();
+
+// Middleware to parse JSON bodies
+app.use(express.json());
 
 app.use('/api',apiRoutes);
 

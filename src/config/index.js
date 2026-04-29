@@ -1,4 +1,7 @@
-module.exports = {
-    ServerConfig: require('./server-config'),
-    Logger: require('./logger-config')
+import ServerConfig from './server-config.js';
+import Logger from './logger-config.js';
+
+export {
+    ServerConfig,
+    Logger
 }
